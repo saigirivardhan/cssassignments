@@ -1,149 +1,199 @@
-html{
+
+body{
+    background-color: yellow;
+}
+h2{
+    padding-top: 40px;
+    text-align: center;
+
+}
+
+.flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    /* animation-name: fasna;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+}
+.box{
+    display: inline-block;
+    margin:60px 30px 20px 30px;
+    width: 10vw;
+    height: 15vh;
+    background-color: rgb(66, 171, 171);
+    animation-name: fasna;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+.b{
     background-color: grey;
+    animation: A 4s infinite 2s linear;
 }
-.item1{
-    color: rgb(222, 10, 205);
-    background-color: white;
-    border: 4px solid red;
-    border-radius: 20px;
-    box-shadow: 4px 4px 0px rgb(115, 14, 216);
-    text-shadow: 1px 0px 0px rgb(128, 10, 109);
-    font-style: italic;
-    font-weight: bolder;
-    padding: 15px;
-    position: relative;
-    left: 450px;
-    width: 290px;
-    height: 90px;
-    text-align: center;
+.o{
+    animation: Z 5s infinite  cubic-bezier(0.075, 0.82, 0.165, 1) ;
 }
-.item2{
-    border: 5px solid green;
-   display: grid;
-   grid-template-columns: auto auto ;
-   row-gap: 100px;
-   column-gap: 700px;
-   margin: 10px;
-}
-.item3{
-    color: rgb(25, 5, 80);
-    background-color: white;
-    border: 4px solid red;
-    border-radius: 20px;
-    box-shadow: 4px 4px 0px rgb(115, 14, 216);
-    text-shadow: 1px 0px 0px rgb(7, 38, 107);
-    font-style: italic;
-    font-weight: bolder;
-    padding: 15px;
-    width: 200px;
-    height: 150px;
-    text-align: center;
-}
-img{
-    width: 150px;
-    height: 150px;
-}
-.item4{
-    color: black;
-    border: 5px solid rgb(79, 1, 79);
-    background-color: green;
-    width: 770px;
-    height: 470px;
-    position: relative;
-    left: 290px;
-    font-size: x-large;
-    padding: 3px;
-   display: grid;
-   grid-template-columns: auto  ;
-
-   column-gap: 10px;
-  row-gap: 10px;
+.l{
+    animation: H 5s infinite  cubic-bezier(0.075, 0.82, 0.165, 1) ;
  
-   
 }
-.item5{
-    color: black;
-    background-color: rgb(235, 239, 167);
-    width: 350px;
-    height: 170px;
-    padding: 20px;
-    /* margin: 10px; */
-    font-style: italic;
-    font-size: x-large;
-   
+.l1{
+    background-color: brown;
+    animation: R 5s infinite  cubic-bezier(0.075, 0.82, 0.165, 1) ;
 
 }
-hr{
-    width: 350px;
+.l2{
+    background-color: green;
+    animation: B 5s infinite  cubic-bezier(0.075, 0.82, 0.165, 1) ;
+
+}
+
+.h2{
+    color: brown;
+    text-decoration:underline;
+}
+
+@keyframes fasna{
+    0%{
+        transform: skew(-30deg);
+    }
+    50%{
+        transform: skew(0deg);
+    }
+    75%{
+        transform: skew(30deg);
+    }
+    100%{
+        transform: skew(0deg);
+    }
+
+}
+@keyframes A{
+    0%{
+        transform: skewY(-30deg);
+    }
+    50%{
+        transform: skewY(0deg);
+    }
+    75%{
+        transform: skewY(30deg);
+    }
+    100%{
+        transform: skewY(0deg);
+    }
+}
+@keyframes Z{
+    to{
+        transform:rotate(180deg)   
+    }
+}
+@keyframes H{
+    0%{
+        transform: scaleY(1);
+    }
+    50%{
+        transform: scaleY(0.5);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+
+}
+@keyframes R{
+    0%{
+        transform: scaleX(1);
+    }
+    50%{
+        transform: scaleX(0.5);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+
+}
+@keyframes B{
+    0%{
+        transform:rotate(-180deg)   
+    }
+    50%{
+        transform:rotate(0deg)   
+    }
+    100%{
+        transform:rotate(-180deg)   
+    }
+
+}
+
+/* 2nd page */
+
+.try{
+    padding: 0;
+    margin: 0px;
+}
+.x{
+    margin-bottom: 50px ;
+    width: 10vw;
+    height: 15vh;
+    background-color: green;
+    transition: all 4s linear;
+}
+.box1:hover{
+    width: 20vw;
+    transition-timing-function: cubic-bezier(0.26, 1.22, 0.67, 0.54);
+
+}
+.box2:hover{
+    width: 20vw;
+    height: 20vw;
+    transition-timing-function: cubic-bezier(0.05, 1.01, 1, 1);
+
+}
+.box3:hover{
+    width: 20vw;
+    transition-timing-function: cubic-bezier(0.26, 1.22, 0.67, 0.54);
+
+}
+.box4:hover{
+    width: 20vw;
+    transition-timing-function: cubic-bezier(0, 0.83, 0.53, 1);
+
+}
+.box5:hover{
+    width: 20vw;
+    transition-timing-function: cubic-bezier(0.1, 1.48, 1, 1);
+
+}
+
+.box6:hover{
+    width: 20vw;
+    transition-timing-function: cubic-bezier(0.06, 1, 1, 1);
+
+}
+
+.box7:hover{
+    width: 20vw;
+    transition-timing-function: cubic-bezier(0.03, 0.95, 0.32, 1);
+
+}
+.back{
     position: relative;
-    right: 18px;
-    top: 10px;
-  
+    left: 48vw;
+    color: rgb(226, 64, 64);
+    font-size: 32px;
+    margin: 0;
 }
-.item6{
-    font-style: normal;
-    font-size: medium;
-    font-style: italic;
-    font-weight: bold;
-   
-}
-.item7{
-    color: black;
-    background-color: rgb(235, 239, 167);
-    width: 320px;
-    height: 170px;
-    padding: 20px;
-    /* margin: 10px; */
-    font-style: italic;
-    font-size: x-large;
+.nxt{
     position: relative;
-    left: 400px;
-    bottom: 220px;
+    top: -50px;
+    left: 18px;
+    font-size: 32px;
+
 }
-.item8{
-    font-style: normal;
-    font-size: medium;
-    font-style: italic;
-    font-weight: bold;
-}
-.item9{
-    color: black;
-    background-color: rgb(235, 239, 167);
-    width: 730px;
-    height: 170px;
-    padding: 20px;
-    /* margin: 10px; */
-    font-style: italic;
-    font-size: x-large;
-    position: relative;
-    bottom: 220px;
-}
-.my{
-    width: 760px;
-}
-.item10{
-    font-style: normal;
-    font-size: medium;
-    font-style: italic;
-    font-weight: bold;
-}
-.item11{
-    color: rgb(235, 16, 16);
-    background-color: rgb(10, 238, 26);
-    border: 4px solid red;
-    border-radius: 20px;
-    box-shadow: 7px 7px 0px rgb(115, 14, 216);
-    text-shadow: 1px 0px 0px rgb(7, 38, 107);
-    font-style: italic;
-    font-weight: bold;
-    font-size: x-large;
-    padding: 3px;
-    width: 450px;
-    height: 70px;
-    text-align: center;
-    position: fixed;
-    top: 500px;
-    left: 450px;
-}
+
+
+
 
 

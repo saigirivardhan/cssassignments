@@ -1,0 +1,201 @@
+body{
+    width: 96vw;
+    height: 112vh;
+    border: 20px ;
+    margin: 0;
+    background-image: url(./pics/sky.jpg);
+    background-image: contain;
+    overflow:hidden;
+
+}
+.border{
+    width: 98vw;
+    height: 112vh;
+    border: 20px ;
+    margin: 0;
+    border-bottom: 0;
+    border-style: solid;
+    border-color: white green white orange;
+    border-left-color: green ;
+    border-right-color: orange;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 5;
+
+
+}
+.p{
+    top: 2vh;
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin-top: 0;
+}
+.p1{
+    padding-left:5px;
+    background-color: orange;
+
+}
+.p2{
+    padding: 0 10px 0 5px;
+    background-color: white;
+    margin-left: 10px;
+
+}
+.p3{
+    padding: 0 10px 0 5px;
+    background-color: green;
+    margin-left: 10px;
+}
+.city1{
+    height: 40vh;
+    position: absolute;
+    top: 35vh;
+    width: 100%;
+    animation: city1 infinite linear 10s reverse;
+
+}
+.city2{
+    height: 40vh;
+    position: absolute;
+    top: 35vh;
+    width: 100%;
+    animation: city2 infinite linear 10s reverse;
+
+}
+@keyframes city1
+{
+    from
+    {
+        left: -100%;
+    }
+    to
+    {
+        left: 0px;
+    }
+}
+@keyframes city2
+{
+    from
+    {
+        left: 0px;
+    }
+    to
+    {
+        left: 100%;
+    }
+}
+
+/* @keyframes city1{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(100px);
+  
+    }
+} */
+
+.road1{
+    /* background-image: url(./pics/road.jpg);
+    height: 40vh; */
+    /* background-image: contain; */
+    /* background-repeat: repeat;
+    position: relative;
+    top: 21vh;
+    z-index: 0; */
+    animation: road1 infinite linear 10s reverse ;
+    position: absolute;
+    top: 75vh;
+    
+
+}
+.road2{
+    animation: road2 infinite linear 10s reverse ;
+    position: absolute;
+    top: 75vh;
+    
+
+
+}
+@keyframes road1{
+    from{
+        left: -5000px;
+    }
+    to{
+        left: 18px;
+
+    }
+}
+@keyframes road2
+{
+    from
+    {
+        left: 18px;
+    }
+    to
+    {
+        left: 5000px;
+    }
+}
+
+.car{
+    width: 500px;
+    position: absolute;
+    top: 68vh;
+    left: 30%;
+    width: 56vw;
+
+}
+.wheels{
+    position: absolute;
+    top: 83vh;
+    left: 33vw;
+    
+
+}
+.wheel1{
+    margin-right: 13.8vw;
+    animation: w1 infinite linear 1s ;
+
+}
+.wheel2{
+    animation: w1 infinite linear 1s ;
+ 
+}
+/* no need to give 2 names,both work here is same w1 */
+@keyframes w1{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.flag{
+    position: relative;
+    top: -29vh;
+    left: 23vw;
+    width: 20vw;
+    animation: flag infinite linear 1s ;
+
+}
+.sun{
+    position: absolute;
+    top: 20vh;
+    right: 10vw;
+    animation: sun infinite linear 200s ;
+}
+@keyframes sun{
+    from{
+        transform: translate(20px);
+    }
+    to{
+        transform: translate(-30px);
+   
+    }
+}
